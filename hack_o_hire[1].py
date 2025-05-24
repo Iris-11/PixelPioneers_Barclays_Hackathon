@@ -210,7 +210,7 @@ def extract_body(payload):
 
 def mail_extract():
     mail = imaplib.IMAP4_SSL('imap.gmail.com')
-    mail.login('ishani.deshmukh@cumminscollege.in', 'July@2023')
+    mail.login('xyz', '****')
     mail.select('inbox')
     today = datetime.today().strftime('%d-%b-%Y')
     result, data = mail.search(None, '(UNSEEN)', '(SINCE "' + today + '")')
@@ -265,8 +265,8 @@ import smtplib
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Define Gmail credentials
-gmail_user = "ishani.deshmukh@cumminscollege.in"
-gmail_password = "July@2023"
+gmail_user = "xyz"
+gmail_password = "****"
 
 # Define the label dictionary
 '''label_dict = {
